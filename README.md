@@ -21,7 +21,7 @@ This project is a Python script that calculates the Ideal Safety Stock based on 
 
 ## How to Use
 
-1. Run the script `safety_stock.py`.
+1. Run the script `safety_stock_z_sigma_sqrtLT.py`.
 2. Select the Excel file with the input data.
 3. Choose where to save the output Excel file.
 4. Check the generated file containing calculation sheets and a comparison chart.
@@ -30,8 +30,7 @@ This project is a Python script that calculates the Ideal Safety Stock based on 
 
 The Ideal Safety Stock calculation follows these steps:
 
-- Average monthly consumption = Total consumption over 24 months / 24
-- Estimated standard deviation = 20% of average monthly consumption
+- Estimated standard deviation based on past consumption data
 - Lead time converted from days to months
 - Service level factor Z = 1.64 for 95%
 - Safety Stock = Z × standard deviation × √(lead time in months)
@@ -67,4 +66,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
 THE SOFTWARE.
-
