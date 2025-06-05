@@ -1,49 +1,49 @@
 # Safety Stock Calculation
 
-Este projeto é um script Python que calcula o Estoque de Segurança Ideal (Safety Stock) com base em dados de consumo, estoque atual e preço de transferência, utilizando uma abordagem estatística para estimar a variabilidade da demanda e o tempo de entrega.
+This project is a Python script that calculates the Ideal Safety Stock based on consumption data, current stock, and transfer price, using a statistical approach to estimate demand variability and lead time.
 
-## Funcionalidades
+## Features
 
-- Leitura de arquivos Excel com dados de consumo, estoque atual e preço.
-- Cálculo do consumo médio mensal e desvio padrão estimado.
-- Identificação automática da coluna de tempo de trânsito (PDT).
-- Cálculo do Safety Stock Ideal usando o nível de serviço de 95%.
-- Comparação entre o estoque de segurança atual e o ideal.
-- Geração de arquivo Excel com resultados, formatação e gráfico comparativo.
-- Interface gráfica simples para seleção de arquivos de entrada e saída.
+- Reads Excel files with consumption, current stock, and price data.
+- Calculates average monthly consumption and estimated standard deviation.
+- Automatically identifies the lead time (PDT) column.
+- Calculates the Ideal Safety Stock using a 95% service level.
+- Compares current safety stock with the ideal one.
+- Generates an Excel file with results, formatting, and a comparison chart.
+- Simple graphical interface for selecting input and output files.
 
-## Requisitos
+## Requirements
 
 - Python 3.x
 - pandas
 - openpyxl
-- tkinter (já incluso na maioria das distribuições Python)
+- tkinter (included in most Python distributions)
 
-## Como usar
+## How to Use
 
-1. Execute o script `safety_stock.py`.
-2. Selecione o arquivo Excel com os dados de entrada.
-3. Escolha onde salvar o arquivo Excel com os resultados.
-4. Verifique o arquivo gerado, que contém as planilhas de cálculo e um gráfico comparativo.
+1. Run the script `safety_stock.py`.
+2. Select the Excel file with the input data.
+3. Choose where to save the output Excel file.
+4. Check the generated file containing calculation sheets and a comparison chart.
 
-## Explicação do cálculo
+## Calculation Explanation
 
-O cálculo do Safety Stock ideal segue os passos:
+The Ideal Safety Stock calculation follows these steps:
 
-- Consumo médio mensal = Consumo total em 24 meses / 24
-- Estimativa do desvio padrão = 20% do consumo médio mensal
-- Tempo de trânsito (lead time) convertido de dias para meses
-- Fator de nível de serviço Z = 1.64 para 95%
-- Safety Stock = Z × desvio padrão × √(tempo de trânsito em meses)
-
----
-
-## Autor
-
-KarolineVollet
+- Average monthly consumption = Total consumption over 24 months / 24
+- Estimated standard deviation = 20% of average monthly consumption
+- Lead time converted from days to months
+- Service level factor Z = 1.64 for 95%
+- Safety Stock = Z × standard deviation × √(lead time in months)
 
 ---
 
-## Licença
+## Author
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
+Your Name or GitHub Username
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
